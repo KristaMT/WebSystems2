@@ -1,1 +1,1 @@
-test
+Art Management Display
