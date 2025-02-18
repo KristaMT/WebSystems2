@@ -83,7 +83,7 @@ body {
 }
 
 .scroll-container {
-    animation: scrollContainer 20s linear infinite;
+    animation: scrollContainer 40s linear infinite;
 }
 
 @keyframes scrollContainer {
