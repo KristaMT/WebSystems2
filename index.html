@@ -48,7 +48,22 @@
             </div>
             <h1>Contact Us</h1>
             <p class="center-text">krista@daytonastate.edu</p>
+
         </section>
+    <script>
+        const images = document.querySelectorAll('.circle-image');
+        let degree = 0;
+
+        function rotateImages() {
+            degree += 1;  // You can adjust the speed here
+            images.forEach((img, index) => {
+                const angle = (90 * index) + degree; // Spread images equally around the circle
+                img.style.transform = `translate(-50%, -50%) rotate(${angle}deg) translate(100px) rotate(-${angle}deg)`; // Circular motion
+            });
+        }
+
+        setInterval(rotateImages, 30); // Adjust the speed of rotation
+    </script>
     </main>
 
     <footer>
